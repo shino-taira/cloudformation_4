@@ -166,7 +166,7 @@ Resources:
       DestinationCidrBlock: 0.0.0.0/0
       GatewayId: !Ref IGW
       RouteTableId: !Ref RouteTablePublic # Required
- 
+
 #ルートテーブルをパブリックサブネットに関連付け
   PublicSubnetRouteTableAssociation1a:
     Type: AWS::EC2::SubnetRouteTableAssociation
@@ -206,5 +206,3 @@ Outputs:
     Value: !Ref PrivateSubnet1c
     Export: 
       Name: PrivateSubnet1cId
-
-    
